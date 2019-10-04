@@ -30,18 +30,23 @@ namespace CustomerManagement
             }
         }
         public string FirstName { get; set; }
+
+        public string EmailAddress { get; set; }
         public string FullName
         {
             get
             {
-                if(!string.IsNullOrWhiteSpace(FirstName)&&!string.IsNullOrWhiteSpace(LastName))
+                if (!string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName))
                 {
                     return $"{LastName},{FirstName}";
                 }
                 return LastName + FirstName;
             }
         }
-        public Customer Retrieve(int customerid) 
+
+        public int CustomerId { get; }
+
+        public Customer Retrieve(int customerid)
         {
             return new Customer();
         }
