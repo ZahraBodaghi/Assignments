@@ -13,9 +13,9 @@ namespace CustomerManagement.Test
             var Customer = new Customer
             {
                 FirstName = "Zahra",
-                LastName = "Bodaghi"
+                LastName = "Bodaghi",
             };
-            var expected = "Bodaghi, Zahra";
+            var expected = "Bodaghi,Zahra";
             //Act
             var result = Customer.FullName;
             //Assert
@@ -25,7 +25,7 @@ namespace CustomerManagement.Test
         public void StaticTest()
         {
             //Arrange
-            var expected = 3;
+            int expected = 3;
             //Act
             var c1 = new Customer { FirstName = "Ronnie" };
             Customer.InstantanceCount++;
@@ -36,5 +36,21 @@ namespace CustomerManagement.Test
             //Assert
             Assert.AreEqual(expected: 3, actual: Customer.InstantanceCount);
         }
+        [TestMethod]
+        public void FullNameFirstNameEmpty()
+        {
+            var Customer = new Customer();
+            Customer.FirstName = "";
+            Assert.AreEqual(expected: "", actual: Customer.FullName);
+        }
+        [TestMethod]
+        public void FullNameLastNameEmpty()
+        {
+            var Customer = new Customer();
+            Customer.LastName = "";
+            Assert.AreEqual(expected: "", actual: Customer.LastName);
+        }
+
     }
+
 }
