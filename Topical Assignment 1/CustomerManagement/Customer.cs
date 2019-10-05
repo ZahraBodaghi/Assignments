@@ -54,7 +54,8 @@ namespace CustomerManagement
         {
             return new List<Customer>();
         }
-        public bool save(Customer customer)
+        public bool save(Customer customer) 
+            // ProfReynolds: Method names should be capitalized
         {
             return true;
         }

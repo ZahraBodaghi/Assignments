@@ -11,6 +11,8 @@ namespace CustomerManagement.Test
         public void FullNameTestValid()
         {
             var Customer = new Customer
+                // ProfReynolds: local variables should be lowercase. Also, the
+                // variable Customer would be confusing vs the class Customer
             {
                 FirstName = "Zahra",
                 LastName = "Bodaghi",
@@ -34,19 +36,20 @@ namespace CustomerManagement.Test
             var c3 = new Customer { FirstName = "Yassi" };
             Customer.InstantanceCount++;
             //Assert
+            // ProfReynolds: in the following line, replace the '3' with the variable expected
             Assert.AreEqual(expected: 3, actual: Customer.InstantanceCount);
         }
         [TestMethod]
         public void FullNameFirstNameEmpty()
         {
-            var Customer = new Customer();
+            var Customer = new Customer(); // ProfReynolds the variable should be lowercase
             Customer.FirstName = "";
             Assert.AreEqual(expected: "", actual: Customer.FullName);
         }
         [TestMethod]
         public void FullNameLastNameEmpty()
         {
-            var Customer = new Customer();
+            var Customer = new Customer(); // ProfReynolds the variable should be lowercase
             Customer.LastName = "";
             Assert.AreEqual(expected: "", actual: Customer.LastName);
         }
