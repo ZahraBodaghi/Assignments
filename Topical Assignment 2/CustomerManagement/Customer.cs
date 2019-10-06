@@ -73,7 +73,7 @@ namespace CustomerManagement
         /// <summary>
         /// examines the customer properties and confirms consist and valid data
         /// </summary>
-        /// <returns>true if valid</returns>
+        /// <returns>true if valid or false if is not valid</returns>
         public bool Validate()
         {
             return !CustomerExtensions.IsNullOrWhiteSpace(LastName) && !CustomerExtensions.IsNullOrWhiteSpace(FirstName);
