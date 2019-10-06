@@ -24,5 +24,10 @@ namespace AssignmentDemonstrator
         {
             InitializeComponent();
         }
+
+        private void Border_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
     }
 }
