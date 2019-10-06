@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 /*
  * Zahra Bodaghi
  */
@@ -22,6 +23,11 @@ namespace Order
         /// <param name="orderId">id of the order that be retrived</param>
         /// <returns></returns>
         public Order Retrive(int orderId) => new Order();
+        /// <summary>
+        /// Retive a List Of all Orders. (I added this method since my customer class has one)
+        /// </summary>
+        /// <returns>list of orders</returns>
+        public List<Order> Retrive() => new List<Order>();
         /// <summary>
         /// Saves the current orders
         /// </summary>

@@ -2,7 +2,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 /*
  * Zahra Bodaghi
  */
- //Zahra: I did change all the local variable to the lowercase. 10/05/2019 at 4:22pm
 namespace CustomerManagement.Test
 {
     [TestClass]
@@ -11,16 +10,14 @@ namespace CustomerManagement.Test
         [TestMethod]
         public void FullNameTestValid()
         {
-            var Customer = new Customer
-                // ProfReynolds: local variables should be lowercase. Also, the
-                // variable Customer would be confusing vs the class Customer
+            var sampleCustomer = new Customer
             {
                 FirstName = "Zahra",
                 LastName = "Bodaghi",
             };
             var expected = "Bodaghi,Zahra";
             //Act
-            var result = Customer.FullName;
+            var result = sampleCustomer.FullName;
             //Assert
             Assert.AreEqual(expected: expected, actual: result);
         }
@@ -42,16 +39,16 @@ namespace CustomerManagement.Test
         [TestMethod]
         public void FullNameFirstNameEmpty()
         {
-            var customer = new Customer(); // ProfReynolds the variable should be lowercase
-            customer.FirstName = "";
-            Assert.AreEqual(expected: "", actual: customer.FullName);
+            var sampleCustomer = new Customer(); 
+            sampleCustomer.FirstName = "";
+            Assert.AreEqual(expected: "", actual: sampleCustomer.FullName);
         }
         [TestMethod]
         public void FullNameLastNameEmpty()
         {
-            var customer = new Customer(); 
-            customer.LastName = "";
-            Assert.AreEqual(expected: "", actual: customer.LastName);
+            var sampleCustomer = new Customer(); 
+            sampleCustomer.LastName = "";
+            Assert.AreEqual(expected: "", actual: sampleCustomer.LastName);
         }
 
     }

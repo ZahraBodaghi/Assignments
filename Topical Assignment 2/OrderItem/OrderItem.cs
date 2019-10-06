@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 /*
  * Zahra Bodaghi
  */
-namespace OrderItemManagement
+namespace OrderItemManagement //I had to change the namespace name because the compiler was confused with the name of my class.
 {
     public class OrderItem
     {
         public OrderItem() { }
-        #region
+        #region Properties, Variables, and Fields
         public OrderItem(int orderItemId)
         {
             this.OrderItemId = orderItemId;
@@ -27,6 +28,11 @@ namespace OrderItemManagement
         /// Saves the current order item.
         /// </summary>
         /// <returns>true if it saves</returns>
+        /// <summary>
+        /// Retive a List Of all OrderItem. (I added this method since my customer class has one)
+        /// </summary>
+        /// <returns>list of orderitem</returns>
+        public List<OrderItem> Retrive() => new List<OrderItem>();
         public bool Save(OrderItem orderItem) => true;
         /// <summary>
         /// Validates the order item data.

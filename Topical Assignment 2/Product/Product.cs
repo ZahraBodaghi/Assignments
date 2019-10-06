@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 /*
  * Zahra Bodaghi
  */
@@ -24,10 +25,15 @@ namespace ProductManagement
         /// <returns></returns>
         public Product Retrive(int productId) => new Product();
         /// <summary>
+        /// Retive a List Of all products. (I added this method since my customer class has one)
+        /// </summary>
+        /// <returns>list of products</returns>
+        public List<Product> Retrive() => new List<Product>();
+        /// <summary>
         /// Save the current product
         /// </summary>
         /// <returns>true if it saves</returns>
-        public bool Save() => true;
+        public bool Save(Product product) => true;
         /// <summary>
         /// Validate the product data
         /// </summary>
