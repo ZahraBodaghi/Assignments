@@ -9,7 +9,7 @@
 
     <Company>Lone Star Colleg-CyFair</Company>
 
-    <Description>This Class is consisted All the test for all the classes in the project.</Description>
+    <Description>This is consisted of all the tests for all the classes in the project.</Description>
   </PropertyGroup>
 
   <ItemGroup>
