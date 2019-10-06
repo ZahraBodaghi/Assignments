@@ -39,6 +39,10 @@ namespace ProductManagement
             {
                 isValid = false;
             }
+            if (CurrentPrice == null)
+            {
+                isValid = false;
+            }
             return isValid;
         }
     }
