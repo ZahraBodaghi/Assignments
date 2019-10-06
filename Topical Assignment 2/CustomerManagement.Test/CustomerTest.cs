@@ -49,7 +49,7 @@ namespace CustomerManagement.Test
         [TestMethod]
         public void FullNameLastNameEmpty()
         {
-            var customer = new Customer(); // ProfReynolds the variable should be lowercase
+            var customer = new Customer(); 
             customer.LastName = "";
             Assert.AreEqual(expected: "", actual: customer.LastName);
         }

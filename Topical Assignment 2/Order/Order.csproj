@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Zahra Bodaghi</Authors>
+    <Company>Lone Star College-CyFair</Company>
+    <Product>Order</Product>
+    <Description>This Class is consisted of properties, variables, and methods for order.</Description>
   </PropertyGroup>
 
 </Project>

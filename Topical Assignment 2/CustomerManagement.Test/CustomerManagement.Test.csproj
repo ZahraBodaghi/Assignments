@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <Authors>Zahra Bodaghi</Authors>
+
+    <Company>Lone Star Colleg-CyFair</Company>
+
+    <Description>This Class is consisted All the test for all the classes in the project.</Description>
   </PropertyGroup>
 
   <ItemGroup>

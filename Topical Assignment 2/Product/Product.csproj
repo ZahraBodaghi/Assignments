@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Zahra Bodaghi</Authors>
+    <Company>Lone Star College-CyFair</Company>
+    <Description>This Class is consisted of properties, variables, and methods for product.</Description>
   </PropertyGroup>
 
 </Project>

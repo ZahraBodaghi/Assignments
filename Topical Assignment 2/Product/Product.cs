@@ -2,7 +2,7 @@
 /*
  * Zahra Bodaghi
  */
-namespace Product
+namespace ProductManagement
 {
     public class Product
     {
