@@ -19,18 +19,19 @@ namespace Order
         /// <summary>
         /// Retrive one order
         /// </summary>
-        /// <param name="orderId">id of the order that to be retrive</param>
+        /// <param name="orderId">id of the order that be retrived</param>
         /// <returns></returns>
         public Order Retrive(int orderId) => new Order();
         /// <summary>
-        /// Save Current Order.
+        /// Saves the current orders
         /// </summary>
-        /// <returns>true if saved</returns>
+        /// <param name="order"></param>
+        /// <returns>true if it saves</returns>
         public bool Save(Order order) => true;
         /// <summary>
         /// Validate the order data.
         /// </summary>
-        /// <returns>true if valid</returns>
+        /// <returns>true if the order is valid or false if the order is not valid</returns>
         public bool Validate()
         {
             var isValid = true;
