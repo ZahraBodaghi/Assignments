@@ -36,7 +36,7 @@ namespace Polygons
             {
                 Console.WriteLine($"{polygonType} Number of Sides: {polygon.NumberOfSides}");
                 Console.WriteLine("{0} Side Length: {1}", polygonType, polygon.SideLength);
-                Console.WriteLine("{0} Perimeter: {1}", polygonType, polygon.GetPerimeter());
+                Console.WriteLine("{0} Perimeter: {1}", polygonType, polygon.Perimeter());
                 Console.WriteLine("{0} Area: {1}", polygonType, Math.Round(polygon.GetArea(), 2));
                 Console.WriteLine();
             }
