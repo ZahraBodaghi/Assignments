@@ -30,6 +30,13 @@ namespace Polygons
             Console.ReadKey();
         }
 
+        /*
+         * ProfReynolds
+         * Remember, we have changed
+         * <object>.GetPerimeter()
+         * to
+         * <object>.Perimeter()
+         */
         public static void DisplayPolygon(string polygonType, dynamic polygon)
         {
             try
