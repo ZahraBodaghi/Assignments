@@ -29,7 +29,11 @@ namespace PeopleViewerWinForm
 
         private void BtnTriangle_Click(object sender, RoutedEventArgs e)
         {
-                   
+            /*
+             * ProfReynolds
+             * you must implement this
+             */
+
 
         }
 
@@ -41,11 +45,19 @@ namespace PeopleViewerWinForm
 
         private void BtnPentagon_Click(object sender, RoutedEventArgs e)
         {
+            /*
+             * ProfReynolds
+             * you must implement this
+             */
             throw new NotImplementedException();
         }
 
         private void BtnOctagon_Click(object sender, RoutedEventArgs e)
         {
+            /*
+             * ProfReynolds
+             * you must implement this
+             */
             throw new NotImplementedException();
         }
 
@@ -54,6 +66,10 @@ namespace PeopleViewerWinForm
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"{polygonType} Number of Sides: {polygon.NumberOfSides}");
             stringBuilder.AppendLine($"{polygonType} Side Length: {polygon.SideLength}");
+            /*
+             * ProfReynolds
+             * we changed from the GetPerimeter property to the Perimeter() method
+             */
             stringBuilder.AppendLine($"{polygonType} Perimeter: {polygon.GetPerimeter}");
             stringBuilder.AppendLine($"{polygonType} Area: {Math.Round(polygon.GetArea(), 2)}");
             TxtBlock.Text = stringBuilder.ToString();
