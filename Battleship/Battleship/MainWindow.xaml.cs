@@ -20,9 +20,32 @@ namespace Battleship
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+
+
+
+        private void BtnResetGame_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            MessageBox.Show(messageBoxText: "BtnRestGame_Click Event");
+        }
+
+        private void BtnShowSolution_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(messageBoxText: "BtnShowSolution_Click Event");
+        }
+
+        private void BtnAboutBattleShip_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(messageBoxText: "BtnAboutBattleship_Click Event");
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnShowOneCell_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(messageBoxText: "BtnAShowOneCell_Click Event");
         }
     }
 }
