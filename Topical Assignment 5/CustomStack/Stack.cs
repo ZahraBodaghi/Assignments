@@ -1,25 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+/*
+ * Zahra Bodaghi
+ */
 
 namespace CustomStack
 {
     public class Stack<T>:LinkedList<T>
     {
-        // note: the Count method is implemented in the LinkedList class and must not be replicated here
+
 
         public void Push(T newValue)
         {
-            throw new NotImplementedException(); // replace this with an implementation
+            var example = new Stack<T>();
+            example.AddFirst(newValue);
         }
 
         public T Pop()
         {
-            throw new NotImplementedException(); // replace this with an implementation
+            var example = new Stack<T>();
+            return example.Pop();
+
         }
 
-        public T Peek()
+        public T Peek() 
         {
-            throw new NotImplementedException(); // replace this with an implementation
+            var example = new Stack<T>();
+            return example.Peek();
+            
         }
 
     }
