@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+
 /*
  * Zahra Bodaghi
  */
@@ -50,6 +52,9 @@ namespace PostfixCalculator
                         default:
                             throw new ArgumentException($"Unrecognized token: {token}");
                     }
+
+                    Debug.WriteLine($"{leftSideExpressionValue}     {rightSideExpressionValue}     {values.Peek()}");
+
                 }
             }
 
