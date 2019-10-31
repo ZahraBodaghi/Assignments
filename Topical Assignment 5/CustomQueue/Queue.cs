@@ -1,13 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
 
 /*
- * ProfReynolds
- * this test class created to assist. It needs all content
- * do not forget to add this new project to the references in the UnitTests project
+ * Zahra Bodaghi
  */
 namespace CustomQueue
 {
-    public class Queue
+    public class Queue<T>: LinkedList<T>
     {
+        public void Enqueue(T newValue)
+        {
+            var example = new Queue<T>();
+            example.Enqueue(newValue);
+        }
+
+        public T Dequeue()
+        {
+            var example = new Queue<T>();
+            return example.Dequeue();
+
+        }
+
+        public T Peek()
+        {
+            var example = new Queue<T>();
+            return example.Peek();
+
+        }
     }
 }

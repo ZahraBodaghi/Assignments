@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CustomQueue\CustomQueue.csproj" />
     <ProjectReference Include="..\CustomStack\CustomStack.csproj" />
+    <ProjectReference Include="..\PostfixCalculator\PostfixCalculator.csproj" />
   </ItemGroup>
 
 </Project>

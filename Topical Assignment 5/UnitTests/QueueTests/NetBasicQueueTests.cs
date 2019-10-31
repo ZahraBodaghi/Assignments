@@ -43,27 +43,16 @@ namespace UnitTests.QueueTests
 
         // normally, this would be at the bottom of the unit test
         // notice, this static array is utilized by the various individual tests
-        private static readonly string[][] EmployeeQueueTestData = new[]
+        private static readonly int[][] QueueTestData = new[]
         {
-            /*new int[0],
+            new int[0],
             new [] { 0 },
             new [] { 0, 1 },
             new [] { 0, 1, 2 },
             new [] { 0, 1, 2, 3 },
             new [] { 0, 1, 2, 3, 4 },
-            new [] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 },*/
-            new string[]
-            {
-                "Fred Flintstone",
-                "Wilma Flintstone",
-                "Barney Rubble",
-                "Fred Mertz",
-                "Ethel Mertz",
-                "Fred Astair",
-                "Ginger Rogers",
-                "Fred Savage",
-                "Winnie Cooper"
-            }
+            new [] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 },
+
         };
 
         [Test]
