@@ -10,6 +10,10 @@ namespace CustomQueue
     {
         public void Enqueue(T newValue)
         {
+            /*
+             * ProfReynolds2
+             * see my comments in the CustomStack
+             */
             var example = new Queue<T>();
             example.Enqueue(newValue);
         }
