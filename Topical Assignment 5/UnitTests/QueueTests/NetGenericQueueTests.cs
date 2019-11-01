@@ -1,6 +1,7 @@
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using Shouldly;
 
 /*
@@ -13,8 +14,8 @@ namespace UnitTests.QueueTests
         [SetUp]
         public void Setup()
         {
-
         }
+
         private static readonly int[][] QueueTestData = new[]
         {
             new int[0],
@@ -25,39 +26,42 @@ namespace UnitTests.QueueTests
             new [] { 0, 1, 2, 3, 4 },
             new [] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 },
         };
+
         [Test]
-        /*
-         * ProfReynolds2
-         * You misspelled the name of the test case
-         * This test case failed to run. You should have found and fixed this yourself without me
-         * BTW: thi has spelling issues too:
-         * Quee_Sucess_Cass
-         * should be
-         * Queue_Success_Cases
-         */
-        [TestCaseSource("QueeTestDate")]
-        public void Quee_Sucess_Cass(int[] testDate)
+        [TestCaseSource("QueueTestData")]
+        public void Queue_Success_Cases(int[] testData)
         {
             var queue = new Queue<int>();
-            for (var i = 0; i < testDate.Length; i++)
+
+
+            for (var i = 0; i < testData.Length; i++)
             {
-                queue.Count.ShouldBe(i, "The Queue Count is Off");
-                queue.Enqueue(testDate[i]);
-                queue.Peek().ShouldBe(testDate[i], "The Recently pushed value is not peeking");
+                queue.Count.ShouldBe(i, "The stack count is off");
+
+                queue.Enqueue(testData[i]);
+
+                queue.Count.ShouldBe(i + 1, "The stack count is off");
+
+                queue.Peek().ShouldBe(testData[i], "The recently pushed value is not peeking");
             }
-            queue.Count.ShouldBe(testDate.Length, "The end count was not as expected");
+
+            queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
+
+
             var counter = queue.Count;
             foreach (int value in queue)
             {
                 counter--;
-                value.ShouldBe(testDate[counter], "The enumeration is not accurate");
+                value.ShouldBe(testData[counter], "The enumeration is not accurate");
             }
-            for (var item = testDate.Length - 1; item >= 0; item--)
+
+
+            for (var item = testData.Length - 1; item >= 0; item--)
             {
-                var expected = testDate[item];
-                queue.Peek().ShouldBe(expected, "The Peeked value was not expected");
-                queue.Dequeue().ShouldBe(expected, "The dequeue was not expected");
-                queue.Count.ShouldBe(item, "The dequeue value was not expected");
+                var expected = testData[item];
+                queue.Peek().ShouldBe(expected, "The peeked value was not expected");
+                queue.Dequeue().ShouldBe(expected, "The Dequeued value was not expected");
+                queue.Count.ShouldBe(item, "The popped value was not expected");
             }
         }
 
@@ -68,8 +72,9 @@ namespace UnitTests.QueueTests
 
             Should.Throw<InvalidOperationException>(() =>
             {
-                var poppedValue = queue.Dequeue();
-            });
+                var dequeueValue = queue.Dequeue();
+            }
+            );
         }
 
         [Test]
@@ -93,7 +98,7 @@ namespace UnitTests.QueueTests
             var queue = new Queue<int>();
             Should.Throw<InvalidOperationException>(() =>
             {
-                var dequeuedValue = queue.Peek();
+                var dequeueValue = queue.Peek();
             }
             );
         }
@@ -111,7 +116,6 @@ namespace UnitTests.QueueTests
                 var dequeuedValue = queue.Peek();
             }
             );
-
         }
     }
 }

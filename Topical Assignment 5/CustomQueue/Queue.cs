@@ -10,25 +10,21 @@ namespace CustomQueue
     {
         public void Enqueue(T newValue)
         {
-            /*
-             * ProfReynolds2
-             * see my comments in the CustomStack
-             */
-            var example = new Queue<T>();
-            example.Enqueue(newValue);
+            
+            AddFirst(newValue);
         }
 
         public T Dequeue()
         {
-            var example = new Queue<T>();
-            return example.Dequeue();
+            
+            return Dequeue();
 
         }
 
         public T Peek()
         {
-            var example = new Queue<T>();
-            return example.Peek();
+            
+            return Peek();
 
         }
     }

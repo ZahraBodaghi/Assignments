@@ -16,33 +16,6 @@ namespace UnitTests.QueueTests
         {
         }
 
-        /*
-         * ProfReynolds
-         * this test class is examining the Basic (non-Generic) Queue. In this test class, we are using
-         * an array of integers - NOT the employee data. So the modification below is incorrect
-         *
-         * This class should return to the NetBasicQueueTests.cs provided in the
-         * starting point solution.
-         *
-         * Note: you need to create three new unit test classes:
-         *
-         * NetGenericQueueTests - very similar to the NetGenericStackTests. In the generic test classes, you
-         * do not use 'new Stack{}' or 'new Queue{}' but you use 'new Stack<int>()'. And in making that
-         * transition, you change 'using System.Collections;' to 'using System.Collections.Generic;'
-         * ----- I created this class for you, but the class still needs content. -----
-         *
-         * CustomQueueTests - again similar to the stack tests. CustomQueueTests is based not on
-         * System.Collections nor System.Collections.Generic but is based on a CustomQueue project.
-         * ----- I created this class for you, but the class still needs content. -----
-         * ----- I also created a new project for you - without content -----
-         *
-         * Finally, the EmployeeQueueTests class is needed. It works just like the <int> tests except is
-         * based on the <string> employee names.
-         * ----- I created this class for you, but the class still needs content. -----
-         */
-
-        // normally, this would be at the bottom of the unit test
-        // notice, this static array is utilized by the various individual tests
         private static readonly int[][] QueueTestData = new[]
         {
             new int[0],
