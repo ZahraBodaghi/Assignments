@@ -13,7 +13,7 @@ namespace PostfixCalculator
         static void Main(string[] args)
         {
             Console.WriteLine();
-            Console.WriteLine("<< your name >>");
+            Console.WriteLine("<< Zahra Bodaghi >>");
             Console.WriteLine("Assignment 4, Project 1");
             Console.WriteLine();
 

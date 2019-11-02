@@ -26,10 +26,7 @@ namespace UnitTests.QueueTests
             }
         };
         [Test]
-        /*
-         * ProfReynolds2
-         * see comments for NetGenericQueueTests
-         */
+
         [TestCaseSource("QueueTestData")]
         public void Queue_Success_Cases(string[] testData) 
         {

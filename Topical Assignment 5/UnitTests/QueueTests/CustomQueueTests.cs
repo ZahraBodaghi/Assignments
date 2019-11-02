@@ -44,7 +44,7 @@ namespace UnitTests.QueueTests
 
                 queue.Count.ShouldBe(i + 1, "The queue count is off");
 
-                queue.Peek().ShouldBe(testData[i], "The recently pushed value is not peeking");
+                queue.Peek().ShouldBe(testData[0], "The recently pushed value is not peeking");
             }
 
             queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
@@ -53,15 +53,17 @@ namespace UnitTests.QueueTests
             var counter = queue.Count; 
             foreach (int value in queue)
             {
-                counter--;
+                
                 value.ShouldBe(testData[counter], "The enumeration is not accurate");
+                counter++;
             }
 
-            for (var item = testData.Length - 1; item >= 0; item--)
+            for (var item = 0; item < testData.Length; item++)
             {
                 var expected = testData[item];
                 queue.Peek().ShouldBe(expected, "The peeked value was not expected");
                 queue.Dequeue().ShouldBe(expected, "The dequeued value was not expected");
+                counter--;
                 queue.Count.ShouldBe(item, "The dequeued value was not expected");
             }
         }

@@ -40,42 +40,29 @@ namespace UnitTests.QueueTests
 
                 queue.Enqueue(testData[i]);
 
-                queue.Count.ShouldBe(i + 1, "The stack count is off");
+                queue.Count.ShouldBe(i + 1, "The Queue count is off");
 
-                /*
-                 * ProfReynolds3
-                 * Since a Queue is first-in, first-out, the Peek will always show the first item
-                 * (remember that a stack peek would show the last item)
-                 * so in the following line, Peek should be testData[0] in each case
-                 */
-//                queue.Peek().ShouldBe(testData[i], "The recently pushed value is not peeking");
+                queue.Peek().ShouldBe(testData[0], "The recently pushed value is not peeking");
             }
 
             queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
 
 
-            /*
-             * ProfReynolds3
-             * again, the queue is from first to last so the counter should start at 0 and increment
-             * (note, the counter++ must be after the shouldbe, not before)
-             */
             var counter = queue.Count;
             foreach (int value in queue)
             {
-                counter--;
-//                value.ShouldBe(testData[counter], "The enumeration is not accurate");
+
+                value.ShouldBe(testData[counter], "The enumeration is not accurate");
+                counter++;
             }
 
-            /*
-             * ProfReynolds3
-             * see the pattern?
-             * the queue is opposite the stack
-             */
-            for (var item = testData.Length - 1; item >= 0; item--)
+
+            for (var item = 0; item < testData.Length; item++)
             {
                 var expected = testData[item];
                 queue.Peek().ShouldBe(expected, "The peeked value was not expected");
                 queue.Dequeue().ShouldBe(expected, "The Dequeued value was not expected");
+                counter--;
                 queue.Count.ShouldBe(item, "The popped value was not expected");
             }
         }
