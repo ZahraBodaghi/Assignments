@@ -47,7 +47,13 @@ namespace UnitTests.QueueTests
 
             queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
 
-
+            /*
+             * ProfReynolds4
+             * This appears to have been copied without thought.
+             * the Queue is loaded first to last and therefore the counter must
+             * begin at 0. Think about what happened here - you started the counter
+             * high, and then kept incrementing
+             */
             var counter = queue.Count;
             foreach (int value in queue)
             {
@@ -56,7 +62,14 @@ namespace UnitTests.QueueTests
                 counter++;
             }
 
-
+            /*
+             * ProfReynolds4
+             * you forgot to initialize the counter.
+             * since your queue begins loaded and then is depleated,
+             * you should start at the ququq count and decrement.
+             * may i suggest you change the counter to expectedQueueSize
+             * AND, the final shouldbe should be looking at the expectedQueueSize, not the item
+             */
             for (var item = 0; item < testData.Length; item++)
             {
                 var expected = testData[item];
