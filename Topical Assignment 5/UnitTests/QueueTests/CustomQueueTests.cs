@@ -50,21 +50,22 @@ namespace UnitTests.QueueTests
             queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
 
             
-            var counter = queue.Count; 
+            var counter = 0; 
             foreach (int value in queue)
             {
                 
                 value.ShouldBe(testData[counter], "The enumeration is not accurate");
                 counter++;
             }
-
+           
+            var expectedQueueSize = queue.Count;
             for (var item = 0; item < testData.Length; item++)
             {
                 var expected = testData[item];
                 queue.Peek().ShouldBe(expected, "The peeked value was not expected");
                 queue.Dequeue().ShouldBe(expected, "The dequeued value was not expected");
-                counter--;
-                queue.Count.ShouldBe(item, "The dequeued value was not expected");
+                expectedQueueSize--;
+                queue.Count.ShouldBe(expectedQueueSize, "The dequeued value was not expected");
             }
         }
 

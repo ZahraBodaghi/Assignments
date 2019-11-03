@@ -27,12 +27,7 @@ namespace UnitTests.QueueTests
         };
         [Test]
 
-        /*
-         * ProfReynolds4
-         * QueueTestData ???
-         * Is that the name of the array on line 13?
-         */
-        [TestCaseSource("QueueTestData")]
+        [TestCaseSource("EmployeeQueueTestData")]
         public void Queue_Success_Cases(string[] testData) 
         {
             var queue = new Queue<string>();
@@ -50,12 +45,16 @@ namespace UnitTests.QueueTests
             }
 
             queue.Count.ShouldBe(testData.Length, "The end count was not as expected");
+            
+            
             var counter = 0; 
             foreach (string value in queue)
             {
                 value.ShouldBe(testData[counter], "The enumeration is not accurate");
                 counter++;
             }
+           
+            
             counter = queue.Count;
             for (var item = 0; item < testData.Length; item++)
             {

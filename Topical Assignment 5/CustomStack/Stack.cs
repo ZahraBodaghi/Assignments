@@ -35,13 +35,8 @@ namespace CustomStack
             {
                 throw new InvalidOperationException();
             }
-            /*
-             * ProfReynolds4
-             * Since we are 'pushing' onto the first of the stack, we have to wrap our heads around
-             * the inverted logic. Peek should be looking at the stack value which will is the next
-             * Pop. So the First Value is needed
-             */
-            var temp = Last.Value; 
+
+            var temp = First.Value; 
             return temp;
 
         }
