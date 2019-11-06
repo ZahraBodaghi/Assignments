@@ -71,19 +71,19 @@
             // MenuItemOpen
             // 
             this.MenuItemOpen.Name = "MenuItemOpen";
-            this.MenuItemOpen.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemOpen.Size = new System.Drawing.Size(180, 22);
             this.MenuItemOpen.Text = "Open";
             this.MenuItemOpen.Click += new System.EventHandler(this.MenuItemOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // MenuItemExit
             // 
             this.MenuItemExit.Name = "MenuItemExit";
-            this.MenuItemExit.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemExit.Size = new System.Drawing.Size(180, 22);
             this.MenuItemExit.Text = "E&xit";
             this.MenuItemExit.Click += new System.EventHandler(this.MenuItemExit_Click);
             // 
@@ -99,7 +99,7 @@
             // 
             this.MenuItemAbout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline);
             this.MenuItemAbout.Name = "MenuItemAbout";
-            this.MenuItemAbout.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemAbout.Size = new System.Drawing.Size(107, 22);
             this.MenuItemAbout.Text = "&About";
             this.MenuItemAbout.Click += new System.EventHandler(this.MenuItemAbout_Click);
             // 

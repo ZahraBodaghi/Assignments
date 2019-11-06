@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentDemonstrator", "AssignmentDemonstrator\AssignmentDemonstrator.csproj", "{A132BC57-AC7E-4659-A3E3-D09EA0FCEEC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonnFramework.Core", "CommonnFramework.core\CommonnFramework.Core.csproj", "{22A5B264-1238-40C9-A32C-77BD8B109AB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonnFramework.Core", "CommonnFramework.core\CommonnFramework.Core.csproj", "{22A5B264-1238-40C9-A32C-77BD8B109AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFramework.Core.Tests", "CommonFramework.Core.Tests\CommonFramework.Core.Tests.csproj", "{BBEC28FC-5ECA-4B79-ACDF-67A8B30FEED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonFramework.Core.Tests", "CommonFramework.Core.Tests\CommonFramework.Core.Tests.csproj", "{BBEC28FC-5ECA-4B79-ACDF-67A8B30FEED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmnetDemonstratorWinForm", "AssignmnetDemonstratorWinForm\AssignmnetDemonstratorWinForm.csproj", "{45585826-76C1-4045-B204-D7DABBE3348B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BBEC28FC-5ECA-4B79-ACDF-67A8B30FEED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBEC28FC-5ECA-4B79-ACDF-67A8B30FEED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBEC28FC-5ECA-4B79-ACDF-67A8B30FEED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45585826-76C1-4045-B204-D7DABBE3348B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45585826-76C1-4045-B204-D7DABBE3348B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45585826-76C1-4045-B204-D7DABBE3348B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45585826-76C1-4045-B204-D7DABBE3348B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
