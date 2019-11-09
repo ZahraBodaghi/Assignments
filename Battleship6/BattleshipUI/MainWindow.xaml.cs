@@ -1,24 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 /*
  * Zahra Bodaghi
  */
 
-namespace Battleship
+/*
+ * ProfReynolds
+ * remove the old BalttleShip project. Remember to delete it from the solution folder and removing it here.
+ */
+
+/*
+ * ProfReynolds
+ * the namespace is BattleshipUI
+ * for your own education, search for the word namespace (this will show how often the namespace is specified)
+ */
+namespace BattleshipUI
 {
+    /*
+     * ProfReynolds
+     * the enums should be in a separats file. I prefer to name the enum file as Enums.cs
+     *
+     * DO NOT encompass the enum within a class. The most common mistake is to fail to
+     * remove the Enums class from within the Enums.cs file
+     */
     public enum ShipCellSegment
     {
         Water,
@@ -28,6 +32,10 @@ namespace Battleship
         Top,
         Bottom,
         Vertical,
+        /*
+         * ProfReynolds
+         * This is not how to spell horizontal
+         */
         Horizaontal
     }
     /// <summary>
