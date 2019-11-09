@@ -37,16 +37,7 @@ namespace AssignmnetDemonstratorWinForm
                 Filter = "Comman Separated Values|*.CSV",
                 Title = "Select the Hundred Names CSV"
             };
-            /*
-             * ProfReynolds
-             * You have two occurences of openFileDialog.ShowDialog()
-             * Either do this:
-             * var dialogResult = openFileDialog.ShowDialog()
-             * if(dialogResult == DialogResult.OK)
-             * or just this:
-             * if(openFileDialog.ShowDialog() == DialogResult.OK)
-             */
-            openFileDialog.ShowDialog();
+
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show(
@@ -66,6 +57,5 @@ namespace AssignmnetDemonstratorWinForm
             }
         }
 
-       
     }
 }
