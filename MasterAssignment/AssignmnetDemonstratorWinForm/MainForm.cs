@@ -40,11 +40,15 @@ namespace AssignmnetDemonstratorWinForm
 
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show(
-                    text: openFileDialog.SafeFileName,
-                    caption: "You Selected",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                TxtFileFlash.Text = openFileDialog.SafeFileName;
+                using(StreamReader sr = File.OpenText(openFileDialog.FileName))
+                {
+                    var oneLineOfText = "";
+                    while((oneLineOfText = sr.ReadLine()) != null)
+                    {
+                        ListBoxOutput.Items.Add(oneLineOfText);
+                    }
+                }
             }
             TxtFileFlash.Text = openFileDialog.SafeFileName;
             using(StreamReader sr = File.OpenText(openFileDialog.FileName))
