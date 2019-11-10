@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 /*
  * Zahra Bodaghi
@@ -26,6 +18,7 @@ namespace BattleshipUI
         {
             InitializeComponent();
         }
+
         public int GameCellRow { get; set; }
         public int GameCellColumn { get; set; }
         public ShipCellSegment ShipSegment { get; set; }
@@ -39,17 +32,35 @@ namespace BattleshipUI
                 DisplayButtonBackground();
             }
         }
+
+        /*
+         * ProfReynolds
+         * this method is incomplete. Here is the start of the switch statement:
+                switch (_shipSegment)
+                {
+                    case ShipCellSegment.Unknown:
+                        {
+                            var uri = _shipCellSegmentUri[ShipCellSegment.Unknown];
+                            var bitmapImage = new BitmapImage(uri);
+                            var brush = new ImageBrush();
+                            brush.ImageSource = bitmapImage;
+                            brush.Stretch = Stretch.Fill;
+                            BtnCellSegment.Background = brush;
+                            break;
+                        }
+                ...
+         */
         private void DisplayButtonBackground()
         {
-            if(_shipSegmentShown)
+            if (_shipSegmentShown)
             {
-              /*  switch (_shipSegmentShown)
-                {
+                /*  switch (_shipSegmentShown)
+                  {
 
-                }*/
+                  }*/
 
             }
-           else
+            else
             {
                 var uri = new Uri(uriString: "Images/battleship_unknown.png", UriKind.Relative);
                 var bitmapImage = new BitmapImage(uri);
@@ -59,6 +70,10 @@ namespace BattleshipUI
                 BtnCellSegment.Background = brush;
             }
         }
-        
+
+        private void BtnCellSegment_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,8 +6,17 @@
              xmlns:local="clr-namespace:BattleshipUI"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="100">
+    <!--
+    ProfReynolds
+    1. change the design width and height to 50 (not in the book)
+    2. I changed the Button definition (I forgot this in the lab manual)
+    3. I added the BtnCellSegment_Click event, but I did not put any code in it
+    -->
     <Grid>
-        <Button x:Name ="BtnCellSegment" HorizontalAlignment="Left" Margin="0,0,0,0" Height ="100" Width="100" VerticalAlignment="Top">
+        <Button x:Name="BtnCellSegment" 
+                Width="{Binding ElementName=GameCellGrid, Path=ActualWidth}" 
+                Height="{Binding ElementName=GameCellGrid, Path=ActualHeight}" 
+                Click="BtnCellSegment_Click">
             <Button.Background>
                     <ImageBrush ImageSource = "Images/battleship_unknown.png"/>
             </Button.Background>

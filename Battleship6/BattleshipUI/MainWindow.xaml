@@ -20,6 +20,10 @@
         <Button Name ="BtnShowSolution" Content="Show Solution" HorizontalAlignment="Left" Margin="100,130,0,0" Height="20" Width="100" VerticalAlignment="Top" Click="BtnShowSolution_Click"/>
         <Button Name ="BtnAboutBattleship" Content="About Battleship" HorizontalAlignment="Left" Margin="100,160,0,0" Height="20" Width="100" VerticalAlignment="Top" Click="BtnAboutBattleship_Click"/>
         <Button Name ="BtnExit" Content="Exit" HorizontalAlignment="Left" Margin="100,190,0,0" Height="20" Width="100" VerticalAlignment="Top" Click="BtnExit_Click"/>
+        <!--
+        ProfReynolds
+        remove this errant GameCell
+        -->
         <local:GameCell HorizontalAlignment="Left" Height="100" Margin="306,90,0,0" VerticalAlignment="Top" Width="100" Loaded="GameCell_Loaded"/>
         <Border BorderThickness="1" BorderBrush="Blue">
             <Border  BorderThickness="5" BorderBrush="Blue" HorizontalAlignment="Left" Margin="476,148,0,0" VerticalAlignment="Top" Width="260" Height ="260">

@@ -38,6 +38,12 @@ namespace AssignmnetDemonstratorWinForm
                 Title = "Select the Hundred Names CSV"
             };
 
+            /*
+             * ProfReynolds 20191109
+             * remove the message box. but this 'if' condition should include
+             * the opening and reading of the text file. So if the dialog result
+             * is not OK, then the file should not be opened.
+             */
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 TxtFileFlash.Text = openFileDialog.SafeFileName;
