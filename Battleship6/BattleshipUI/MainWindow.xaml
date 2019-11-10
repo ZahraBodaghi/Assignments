@@ -24,7 +24,7 @@
         ProfReynolds
         remove this errant GameCell
         -->
-        <local:GameCell HorizontalAlignment="Left" Height="100" Margin="306,90,0,0" VerticalAlignment="Top" Width="100" Loaded="GameCell_Loaded"/>
+        <!--<local:GameCell HorizontalAlignment="Left" Height="100" Margin="306,90,0,0" VerticalAlignment="Top" Width="100" Loaded="GameCell_Loaded"/>-->
         <Border BorderThickness="1" BorderBrush="Blue">
             <Border  BorderThickness="5" BorderBrush="Blue" HorizontalAlignment="Left" Margin="476,148,0,0" VerticalAlignment="Top" Width="260" Height ="260">
                 <Canvas HorizontalAlignment="Left" x:Name="ButtonCanvas">

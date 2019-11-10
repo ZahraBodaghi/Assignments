@@ -4,40 +4,9 @@
  * Zahra Bodaghi
  */
 
-/*
- * ProfReynolds
- * remove the old BalttleShip project. Remember to delete it from the solution folder and removing it here.
- */
 
-/*
- * ProfReynolds
- * the namespace is BattleshipUI
- * for your own education, search for the word namespace (this will show how often the namespace is specified)
- */
 namespace BattleshipUI
 {
-    /*
-     * ProfReynolds
-     * the enums should be in a separats file. I prefer to name the enum file as Enums.cs
-     *
-     * DO NOT encompass the enum within a class. The most common mistake is to fail to
-     * remove the Enums class from within the Enums.cs file
-     */
-    public enum ShipCellSegment
-    {
-        Water,
-        Single,
-        Left,
-        Right,
-        Top,
-        Bottom,
-        Vertical,
-        /*
-         * ProfReynolds
-         * This is not how to spell horizontal
-         */
-        Horizaontal
-    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -85,8 +54,8 @@ namespace BattleshipUI
                 }
             }
             GameCell00.ShipSegment = ShipCellSegment.Left;
-            GameCell01.ShipSegment = ShipCellSegment.Horizaontal;
-            GameCell02.ShipSegment = ShipCellSegment.Horizaontal;
+            GameCell01.ShipSegment = ShipCellSegment.Horizontal;
+            GameCell02.ShipSegment = ShipCellSegment.Horizontal;
             GameCell03.ShipSegment = ShipCellSegment.Right;
             GameCell14.ShipSegment = ShipCellSegment.Top;
             GameCell24.ShipSegment = ShipCellSegment.Vertical;
