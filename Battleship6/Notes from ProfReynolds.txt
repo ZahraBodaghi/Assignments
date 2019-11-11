@@ -1,0 +1,2 @@
+Nov 10
+I changed the images properties fro Resource to Content. This was a lab manual error.
