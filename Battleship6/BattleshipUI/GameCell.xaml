@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BattleshipUI"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="100">
+             d:DesignHeight="50" d:DesignWidth="50">
     <!--
     ProfReynolds
     1. change the design width and height to 50 (not in the book)

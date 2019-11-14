@@ -32,6 +32,18 @@ namespace BinaryTreeTests
                 Assert.AreEqual(item, 10, "The item value should be 10");
             }
         }
+        [TestMethod]
+        public void CountTest()
+        {
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Add(10);
+            tree.Add(12);
+            tree.Add(13);
+            //Act
+            var actualMemberOfTree = tree.Count;
+            //Assert
+            actualMemberOfTree.ShouldBe(3);
+        }
 
     }
 }
