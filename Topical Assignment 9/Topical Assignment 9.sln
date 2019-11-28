@@ -3,7 +3,61 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPF", "HelloWPF\HelloWPF.csproj", "{CD3995DD-123C-4E67-96F8-5FDF11B55FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutWithGrids", "LayoutWithGrids\LayoutWithGrids.csproj", "{378C1920-5248-4048-9BE4-C8EE0780DA8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutWithStackPanel", "LayoutWithStackPanel\LayoutWithStackPanel.csproj", "{32D85102-AC43-4BAD-96E0-AD6554E9EBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarpPanel", "WarpPanel\WarpPanel.csproj", "{C8783ED3-37EC-4DB1-AFC9-F55F1950E43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutWithDockPanel", "DockPanel\LayoutWithDockPanel.csproj", "{FB243576-3AC0-428C-9DF0-732993B621B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutWithCanvas", "LayoutWithCanvas\LayoutWithCanvas.csproj", "{376466D5-DF4B-4470-9F87-4D8862302287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleForm", "SimpleForm\SimpleForm.csproj", "{04FF9058-5FB4-4E1A-B8D5-A04C021769AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousDemmo", "AsynchronousDemmo\AsynchronousDemmo.csproj", "{0072470A-0949-4DEC-97E2-92C7F2260727}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD3995DD-123C-4E67-96F8-5FDF11B55FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3995DD-123C-4E67-96F8-5FDF11B55FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3995DD-123C-4E67-96F8-5FDF11B55FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3995DD-123C-4E67-96F8-5FDF11B55FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378C1920-5248-4048-9BE4-C8EE0780DA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378C1920-5248-4048-9BE4-C8EE0780DA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378C1920-5248-4048-9BE4-C8EE0780DA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378C1920-5248-4048-9BE4-C8EE0780DA8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D85102-AC43-4BAD-96E0-AD6554E9EBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D85102-AC43-4BAD-96E0-AD6554E9EBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D85102-AC43-4BAD-96E0-AD6554E9EBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D85102-AC43-4BAD-96E0-AD6554E9EBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8783ED3-37EC-4DB1-AFC9-F55F1950E43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8783ED3-37EC-4DB1-AFC9-F55F1950E43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8783ED3-37EC-4DB1-AFC9-F55F1950E43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8783ED3-37EC-4DB1-AFC9-F55F1950E43C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB243576-3AC0-428C-9DF0-732993B621B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB243576-3AC0-428C-9DF0-732993B621B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB243576-3AC0-428C-9DF0-732993B621B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB243576-3AC0-428C-9DF0-732993B621B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{376466D5-DF4B-4470-9F87-4D8862302287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{376466D5-DF4B-4470-9F87-4D8862302287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{376466D5-DF4B-4470-9F87-4D8862302287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{376466D5-DF4B-4470-9F87-4D8862302287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FF9058-5FB4-4E1A-B8D5-A04C021769AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FF9058-5FB4-4E1A-B8D5-A04C021769AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FF9058-5FB4-4E1A-B8D5-A04C021769AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FF9058-5FB4-4E1A-B8D5-A04C021769AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0072470A-0949-4DEC-97E2-92C7F2260727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0072470A-0949-4DEC-97E2-92C7F2260727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0072470A-0949-4DEC-97E2-92C7F2260727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0072470A-0949-4DEC-97E2-92C7F2260727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
