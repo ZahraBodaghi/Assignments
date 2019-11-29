@@ -36,6 +36,11 @@ namespace BattleshipUI
         };
 
         public bool _shipSegmentShown;
+        /*
+         * ProfReynolds
+         * Is this how you spell ShipSegmentShown? (-3)
+         * (you have a q)
+         */
         public bool ShipSeqmentShown
         {
             get => _shipSegmentShown;
