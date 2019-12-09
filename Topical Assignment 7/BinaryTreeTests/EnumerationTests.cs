@@ -45,9 +45,6 @@ namespace BinaryTreeTests
             actualMemberOfTree.ShouldBe(3);
         }
 
-        /*
-         * ProfReynolds
-         * need new test method to test something that is your idea
-         */
+
     }
 }

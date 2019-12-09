@@ -36,7 +36,7 @@
             this.MenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.IblFilePath = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.ListBoxOutput = new System.Windows.Forms.ListBox();
             this.TxtFileFlash = new System.Windows.Forms.TextBox();
@@ -103,15 +103,15 @@
             this.MenuItemAbout.Text = "&About";
             this.MenuItemAbout.Click += new System.EventHandler(this.MenuItemAbout_Click);
             // 
-            // label1
+            // IblFilePath
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Location = new System.Drawing.Point(0, 437);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Status and Information Strip";
+            this.IblFilePath.AutoSize = true;
+            this.IblFilePath.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.IblFilePath.Location = new System.Drawing.Point(0, 416);
+            this.IblFilePath.Name = "IblFilePath";
+            this.IblFilePath.Size = new System.Drawing.Size(137, 13);
+            this.IblFilePath.TabIndex = 1;
+            this.IblFilePath.Text = "Status and Information Strip";
             // 
             // splitContainer1
             // 
@@ -123,7 +123,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.ListBoxOutput);
             this.splitContainer1.Panel2.Controls.Add(this.TxtFileFlash);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 413);
+            this.splitContainer1.Size = new System.Drawing.Size(800, 392);
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 2;
             // 
@@ -133,7 +133,7 @@
             this.ListBoxOutput.FormattingEnabled = true;
             this.ListBoxOutput.Location = new System.Drawing.Point(0, 20);
             this.ListBoxOutput.Name = "ListBoxOutput";
-            this.ListBoxOutput.Size = new System.Drawing.Size(530, 393);
+            this.ListBoxOutput.Size = new System.Drawing.Size(530, 372);
             this.ListBoxOutput.TabIndex = 1;
             // 
             // TxtFileFlash
@@ -150,9 +150,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 429);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.IblFilePath);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -175,7 +175,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label IblFilePath;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem MenuItemExit;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
