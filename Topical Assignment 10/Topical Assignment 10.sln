@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectFour", "ConnectFour\ConnectFour.csproj", "{D7B3AE4E-9DD3-4828-9690-D07E291D8B53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4", "Connect4\Connect4.csproj", "{E7DD0D3A-71AD-4A83-9F77-65BB262EF906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7B3AE4E-9DD3-4828-9690-D07E291D8B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7B3AE4E-9DD3-4828-9690-D07E291D8B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7B3AE4E-9DD3-4828-9690-D07E291D8B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7B3AE4E-9DD3-4828-9690-D07E291D8B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DD0D3A-71AD-4A83-9F77-65BB262EF906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DD0D3A-71AD-4A83-9F77-65BB262EF906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DD0D3A-71AD-4A83-9F77-65BB262EF906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DD0D3A-71AD-4A83-9F77-65BB262EF906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
